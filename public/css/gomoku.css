@@ -1,0 +1,74 @@
+:root {
+    --playground-width: 477px;  
+    --turn-label-height: 25px;
+    --video-width: calc(var(--playground-width) / 3);
+    --video-height: calc(var(--video-width) * 1.5);
+    --user-name-height: 30px;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#canvas {
+    height: var(--playground-width);
+    width:  var(--playground-width);
+    border: solid 1px black;
+}
+
+#user-info {
+    width: var(--playground-width);
+}
+
+#user-info, #middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-info .item{
+    width: var(--video-width);
+    height: calc(var(--video-height));
+}
+#user-info form {
+    justify-content: center;
+    align-items: center;
+    width: var(--playground-width);
+    height: var(--video-height);
+}
+
+video {
+    border: 1px solid black;
+    width: var(--video-width);
+    height: calc(var(--video-height) - var(--user-name-height));
+}
+div.username{
+    text-align: right;
+    width: 100%;
+}
+span.marker {
+    float: left;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--playground-width);
+    height: var(--video-height);
+}
+
+form input {
+    font-size: 18px;
+}
+
+form div h1 {
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
