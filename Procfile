@@ -1,1 +1,1 @@
-web node server/app.ts
+web node dist/server/app.js
