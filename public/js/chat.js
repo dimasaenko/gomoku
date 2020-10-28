@@ -6,7 +6,7 @@ class Chat {
 
     constructor(socket) {
         this.socket = socket;
-        this.peer = new Peer(undefined, {host: 'localhost', port: 9000, path: '/myapp'});
+        this.peer = new Peer(undefined, {host: location.hostname, port: 9000, path: '/myapp'});
         this.UI.userVideo.muted = true;
 
         this.peer.on('open', peerId => {
