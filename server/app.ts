@@ -74,3 +74,6 @@ io.on('connection', (socket: Socket) => {
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {})
+
+const PeerServer = require('peer').PeerServer;
+const peerServer = PeerServer({port: 9000, path: '/myapp'});

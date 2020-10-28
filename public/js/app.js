@@ -33,7 +33,6 @@ class App {
     }
 
     setSocketEvents() {
-        
         this.socket.on('game.waiting', () => {
             if (!this.gameStarted) {
                 this.UI.turnInfo.innerText = "Waiting for opponent...";
