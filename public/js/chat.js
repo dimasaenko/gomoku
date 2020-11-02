@@ -6,7 +6,7 @@ class Chat {
 
     constructor(socket) {
         this.socket = socket;
-        this.peer = new Peer(undefined, {host: location.hostname, port: 9000, path: '/peerjs'});
+        this.peer = new Peer(undefined, {host: 'peerjs-d.herokuapp.com', port: 443, secure: true});
         this.UI.userVideo.muted = true;
 
         this.peer.on('open', peerId => {
